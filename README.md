@@ -1,4 +1,5 @@
-Take home exersise:
+PhotoDemo
+
 
 Used SDKs:
 Facebook
