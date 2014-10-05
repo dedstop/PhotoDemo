@@ -1,0 +1,1074 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E57AD27319DF332400D15B51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD27219DF332400D15B51 /* main.m */; };
+		E57AD27619DF332400D15B51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD27519DF332400D15B51 /* AppDelegate.m */; };
+		E57AD27C19DF332400D15B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57AD27A19DF332400D15B51 /* Main.storyboard */; };
+		E57AD27E19DF332400D15B51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57AD27D19DF332400D15B51 /* Images.xcassets */; };
+		E57AD28119DF332400D15B51 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E57AD27F19DF332400D15B51 /* LaunchScreen.xib */; };
+		E57AD28D19DF332400D15B51 /* PhotoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD28C19DF332400D15B51 /* PhotoDemoTests.m */; };
+		E57AD2CC19E064FB00D15B51 /* PhotoDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2CB19E064FB00D15B51 /* PhotoDemoViewController.m */; };
+		E57AD2FD19E0792600D15B51 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2FC19E0792600D15B51 /* PhotoCollectionViewCell.m */; };
+		E57AD30319E08F1B00D15B51 /* PhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD30219E08F1B00D15B51 /* PhotoDetailsViewController.m */; };
+		E57AD30A19E0934B00D15B51 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD30919E0934B00D15B51 /* PhotoTableViewCell.m */; };
+		E57AD33919E0A4C800D15B51 /* PhotoDemoFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD33819E0A4C800D15B51 /* PhotoDemoFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57AD34519E0A4C800D15B51 /* PhotoDemoFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD34419E0A4C800D15B51 /* PhotoDemoFrameworkTests.m */; };
+		E57AD34819E0A4C800D15B51 /* PhotoDemoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD33419E0A4C800D15B51 /* PhotoDemoFramework.framework */; };
+		E57AD34919E0A4C800D15B51 /* PhotoDemoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD33419E0A4C800D15B51 /* PhotoDemoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E57AD3AD19E0B7EA00D15B51 /* UIAlertView+Error.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2B019E0560700D15B51 /* UIAlertView+Error.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57AD3C019E0B80F00D15B51 /* UIAlertView+Error.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2B119E0560700D15B51 /* UIAlertView+Error.m */; };
+		E57AD3E419E0E6CA00D15B51 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3CC19E0BA7600D15B51 /* Parse.framework */; };
+		E57AD3E519E0E6CA00D15B51 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3CD19E0BA7600D15B51 /* ParseFacebookUtils.framework */; };
+		E57AD3E619E0E6CA00D15B51 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3CE19E0BA7600D15B51 /* FacebookSDK.framework */; };
+		E57AD3E719E0E6D700D15B51 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3D219E0BA7E00D15B51 /* SystemConfiguration.framework */; };
+		E57AD3E819E0E6DC00D15B51 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3D419E0BA8600D15B51 /* MobileCoreServices.framework */; };
+		E57AD40319E0E82600D15B51 /* Keys.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2AD19E054D000D15B51 /* Keys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57AD40519E0E8E500D15B51 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD27419DF332400D15B51 /* AppDelegate.h */; };
+		E57AD40719E0E8E500D15B51 /* PhotoDemoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2CA19E064FB00D15B51 /* PhotoDemoViewController.h */; };
+		E57AD40819E0E8E500D15B51 /* PhotoDetailsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD30119E08F1B00D15B51 /* PhotoDetailsViewController.h */; };
+		E57AD40919E0E8E500D15B51 /* PhotoCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2FB19E0792600D15B51 /* PhotoCollectionViewCell.h */; };
+		E57AD40A19E0E8E500D15B51 /* PhotoTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD30819E0934B00D15B51 /* PhotoTableViewCell.h */; };
+		E57AD42519E0E9FA00D15B51 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3CE19E0BA7600D15B51 /* FacebookSDK.framework */; };
+		E57AD42619E0EA2400D15B51 /* LoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2B619E058F700D15B51 /* LoginViewController.h */; };
+		E57AD42719E0EA2400D15B51 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2B719E058F700D15B51 /* LoginViewController.m */; };
+		E57AD42B19E0EA3000D15B51 /* DataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2A219E052AE00D15B51 /* DataManager.h */; };
+		E57AD42C19E0EA3000D15B51 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2A319E052AE00D15B51 /* DataManager.m */; };
+		E57AD42D19E0EA5600D15B51 /* FacebookPhotoDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2E119E06E7B00D15B51 /* FacebookPhotoDataResponse.h */; };
+		E57AD42E19E0EA5600D15B51 /* FacebookPhotoDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2E219E06E7B00D15B51 /* FacebookPhotoDataResponse.m */; };
+		E57AD42F19E0EA5600D15B51 /* FacebookCategoryList.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2D119E06E7B00D15B51 /* FacebookCategoryList.h */; };
+		E57AD43019E0EA5600D15B51 /* FacebookCategoryList.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2D219E06E7B00D15B51 /* FacebookCategoryList.m */; };
+		E57AD43119E0EA5600D15B51 /* FacebookComments.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2D319E06E7B00D15B51 /* FacebookComments.h */; };
+		E57AD43219E0EA5600D15B51 /* FacebookComments.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2D419E06E7B00D15B51 /* FacebookComments.m */; };
+		E57AD43319E0EA5600D15B51 /* FacebookCursors.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2D519E06E7B00D15B51 /* FacebookCursors.h */; };
+		E57AD43419E0EA5600D15B51 /* FacebookCursors.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2D619E06E7B00D15B51 /* FacebookCursors.m */; };
+		E57AD43519E0EA5600D15B51 /* FacebookFrom.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2D719E06E7B00D15B51 /* FacebookFrom.h */; };
+		E57AD43619E0EA5600D15B51 /* FacebookFrom.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2D819E06E7B00D15B51 /* FacebookFrom.m */; };
+		E57AD43719E0EA5600D15B51 /* FacebookLikes.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2D919E06E7B00D15B51 /* FacebookLikes.h */; };
+		E57AD43819E0EA5600D15B51 /* FacebookLikes.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2DA19E06E7B00D15B51 /* FacebookLikes.m */; };
+		E57AD43919E0EA5600D15B51 /* FacebookPaging.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2DB19E06E7B00D15B51 /* FacebookPaging.h */; };
+		E57AD43A19E0EA5600D15B51 /* FacebookPaging.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2DC19E06E7B00D15B51 /* FacebookPaging.m */; };
+		E57AD43B19E0EA5600D15B51 /* FacebookPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2DD19E06E7B00D15B51 /* FacebookPhoto.h */; };
+		E57AD43C19E0EA5600D15B51 /* FacebookPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2DE19E06E7B00D15B51 /* FacebookPhoto.m */; };
+		E57AD43D19E0EA5600D15B51 /* FacebookPhotoData.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2DF19E06E7B00D15B51 /* FacebookPhotoData.h */; };
+		E57AD43E19E0EA5600D15B51 /* FacebookPhotoData.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2E019E06E7B00D15B51 /* FacebookPhotoData.m */; };
+		E57AD43F19E0EA5600D15B51 /* FacebookPlace.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2E319E06E7B00D15B51 /* FacebookPlace.h */; };
+		E57AD44019E0EA5600D15B51 /* FacebookPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2E419E06E7B00D15B51 /* FacebookPlace.m */; };
+		E57AD44119E0EA5600D15B51 /* FacebookPlaceLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2E519E06E7B00D15B51 /* FacebookPlaceLocation.h */; };
+		E57AD44219E0EA5600D15B51 /* FacebookPlaceLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2E619E06E7B00D15B51 /* FacebookPlaceLocation.m */; };
+		E57AD44319E0EA5600D15B51 /* FacebookTags.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2E719E06E7B00D15B51 /* FacebookTags.h */; };
+		E57AD44419E0EA5600D15B51 /* FacebookTags.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2E819E06E7B00D15B51 /* FacebookTags.m */; };
+		E57AD44519E0EA5600D15B51 /* FacebookMessageTag.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2F519E070B500D15B51 /* FacebookMessageTag.h */; };
+		E57AD44619E0EA5600D15B51 /* FacebookMessageTag.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2F619E070B500D15B51 /* FacebookMessageTag.m */; };
+		E57AD44819E0EBD900D15B51 /* BaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD29919DF33D700D15B51 /* BaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57AD44919E0EBD900D15B51 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD29A19DF33D700D15B51 /* BaseViewController.m */; };
+		E57AD44A19E0EC1200D15B51 /* BaseCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD29C19DF33F000D15B51 /* BaseCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57AD44B19E0EC1200D15B51 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD29D19DF33F000D15B51 /* BaseCollectionViewController.m */; };
+		E57AD44C19E0EC1200D15B51 /* BaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2FE19E08ED600D15B51 /* BaseTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57AD44D19E0EC1200D15B51 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2FF19E08ED600D15B51 /* BaseTableViewController.m */; };
+		E57AD44E19E0EC1200D15B51 /* BaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD29F19E051C300D15B51 /* BaseNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57AD44F19E0EC1200D15B51 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2A019E051C300D15B51 /* BaseNavigationController.m */; };
+		E57AD45019E0EC6A00D15B51 /* BaseCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2F819E0790300D15B51 /* BaseCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57AD45119E0EC6A00D15B51 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2F919E0790300D15B51 /* BaseCollectionViewCell.m */; };
+		E57AD45219E0EC6A00D15B51 /* BaseTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD30519E0933700D15B51 /* BaseTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57AD45319E0EC6A00D15B51 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD30619E0933700D15B51 /* BaseTableViewCell.m */; };
+		E57AD45519E0EEDE00D15B51 /* Buttons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57AD2B419E0574000D15B51 /* Buttons.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E57AD28719DF332400D15B51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E57AD26519DF332300D15B51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E57AD26C19DF332400D15B51;
+			remoteInfo = PhotoDemo;
+		};
+		E57AD33F19E0A4C800D15B51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E57AD26519DF332300D15B51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E57AD26C19DF332400D15B51;
+			remoteInfo = PhotoDemo;
+		};
+		E57AD34619E0A4C800D15B51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E57AD26519DF332300D15B51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E57AD33319E0A4C800D15B51;
+			remoteInfo = PhotoDemoFramework;
+		};
+		E57AD34A19E0A4C800D15B51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E57AD26519DF332300D15B51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E57AD33319E0A4C800D15B51;
+			remoteInfo = PhotoDemoFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E57AD34F19E0A4C800D15B51 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E57AD34919E0A4C800D15B51 /* PhotoDemoFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E57AD26D19DF332400D15B51 /* PhotoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57AD27119DF332400D15B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57AD27219DF332400D15B51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E57AD27419DF332400D15B51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E57AD27519DF332400D15B51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E57AD27B19DF332400D15B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E57AD27D19DF332400D15B51 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E57AD28019DF332400D15B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E57AD28619DF332400D15B51 /* PhotoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57AD28B19DF332400D15B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57AD28C19DF332400D15B51 /* PhotoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoDemoTests.m; sourceTree = "<group>"; };
+		E57AD29919DF33D700D15B51 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = ../PhotoDemo/BaseViewControllers/BaseViewController.h; sourceTree = "<group>"; };
+		E57AD29A19DF33D700D15B51 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = ../PhotoDemo/BaseViewControllers/BaseViewController.m; sourceTree = "<group>"; };
+		E57AD29C19DF33F000D15B51 /* BaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseCollectionViewController.h; path = ../PhotoDemo/BaseViewControllers/BaseCollectionViewController.h; sourceTree = "<group>"; };
+		E57AD29D19DF33F000D15B51 /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseCollectionViewController.m; path = ../PhotoDemo/BaseViewControllers/BaseCollectionViewController.m; sourceTree = "<group>"; };
+		E57AD29F19E051C300D15B51 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNavigationController.h; path = ../PhotoDemo/BaseViewControllers/BaseNavigationController.h; sourceTree = "<group>"; };
+		E57AD2A019E051C300D15B51 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNavigationController.m; path = ../PhotoDemo/BaseViewControllers/BaseNavigationController.m; sourceTree = "<group>"; };
+		E57AD2A219E052AE00D15B51 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		E57AD2A319E052AE00D15B51 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		E57AD2AD19E054D000D15B51 /* Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
+		E57AD2B019E0560700D15B51 /* UIAlertView+Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Error.h"; sourceTree = "<group>"; };
+		E57AD2B119E0560700D15B51 /* UIAlertView+Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Error.m"; sourceTree = "<group>"; };
+		E57AD2B419E0574000D15B51 /* Buttons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Buttons.xcassets; sourceTree = "<group>"; };
+		E57AD2B619E058F700D15B51 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E57AD2B719E058F700D15B51 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E57AD2CA19E064FB00D15B51 /* PhotoDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDemoViewController.h; sourceTree = "<group>"; };
+		E57AD2CB19E064FB00D15B51 /* PhotoDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDemoViewController.m; sourceTree = "<group>"; };
+		E57AD2D119E06E7B00D15B51 /* FacebookCategoryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookCategoryList.h; sourceTree = "<group>"; };
+		E57AD2D219E06E7B00D15B51 /* FacebookCategoryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookCategoryList.m; sourceTree = "<group>"; };
+		E57AD2D319E06E7B00D15B51 /* FacebookComments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookComments.h; sourceTree = "<group>"; };
+		E57AD2D419E06E7B00D15B51 /* FacebookComments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookComments.m; sourceTree = "<group>"; };
+		E57AD2D519E06E7B00D15B51 /* FacebookCursors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookCursors.h; sourceTree = "<group>"; };
+		E57AD2D619E06E7B00D15B51 /* FacebookCursors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookCursors.m; sourceTree = "<group>"; };
+		E57AD2D719E06E7B00D15B51 /* FacebookFrom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookFrom.h; sourceTree = "<group>"; };
+		E57AD2D819E06E7B00D15B51 /* FacebookFrom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookFrom.m; sourceTree = "<group>"; };
+		E57AD2D919E06E7B00D15B51 /* FacebookLikes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookLikes.h; sourceTree = "<group>"; };
+		E57AD2DA19E06E7B00D15B51 /* FacebookLikes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookLikes.m; sourceTree = "<group>"; };
+		E57AD2DB19E06E7B00D15B51 /* FacebookPaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookPaging.h; sourceTree = "<group>"; };
+		E57AD2DC19E06E7B00D15B51 /* FacebookPaging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookPaging.m; sourceTree = "<group>"; };
+		E57AD2DD19E06E7B00D15B51 /* FacebookPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookPhoto.h; sourceTree = "<group>"; };
+		E57AD2DE19E06E7B00D15B51 /* FacebookPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookPhoto.m; sourceTree = "<group>"; };
+		E57AD2DF19E06E7B00D15B51 /* FacebookPhotoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookPhotoData.h; sourceTree = "<group>"; };
+		E57AD2E019E06E7B00D15B51 /* FacebookPhotoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookPhotoData.m; sourceTree = "<group>"; };
+		E57AD2E119E06E7B00D15B51 /* FacebookPhotoDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookPhotoDataResponse.h; sourceTree = "<group>"; };
+		E57AD2E219E06E7B00D15B51 /* FacebookPhotoDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookPhotoDataResponse.m; sourceTree = "<group>"; };
+		E57AD2E319E06E7B00D15B51 /* FacebookPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookPlace.h; sourceTree = "<group>"; };
+		E57AD2E419E06E7B00D15B51 /* FacebookPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookPlace.m; sourceTree = "<group>"; };
+		E57AD2E519E06E7B00D15B51 /* FacebookPlaceLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookPlaceLocation.h; sourceTree = "<group>"; };
+		E57AD2E619E06E7B00D15B51 /* FacebookPlaceLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookPlaceLocation.m; sourceTree = "<group>"; };
+		E57AD2E719E06E7B00D15B51 /* FacebookTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookTags.h; sourceTree = "<group>"; };
+		E57AD2E819E06E7B00D15B51 /* FacebookTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookTags.m; sourceTree = "<group>"; };
+		E57AD2F519E070B500D15B51 /* FacebookMessageTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookMessageTag.h; sourceTree = "<group>"; };
+		E57AD2F619E070B500D15B51 /* FacebookMessageTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookMessageTag.m; sourceTree = "<group>"; };
+		E57AD2F819E0790300D15B51 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
+		E57AD2F919E0790300D15B51 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
+		E57AD2FB19E0792600D15B51 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		E57AD2FC19E0792600D15B51 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		E57AD2FE19E08ED600D15B51 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTableViewController.h; path = ../PhotoDemo/BaseViewControllers/BaseTableViewController.h; sourceTree = "<group>"; };
+		E57AD2FF19E08ED600D15B51 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTableViewController.m; path = ../PhotoDemo/BaseViewControllers/BaseTableViewController.m; sourceTree = "<group>"; };
+		E57AD30119E08F1B00D15B51 /* PhotoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailsViewController.h; sourceTree = "<group>"; };
+		E57AD30219E08F1B00D15B51 /* PhotoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailsViewController.m; sourceTree = "<group>"; };
+		E57AD30519E0933700D15B51 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		E57AD30619E0933700D15B51 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		E57AD30819E0934B00D15B51 /* PhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewCell.h; sourceTree = "<group>"; };
+		E57AD30919E0934B00D15B51 /* PhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewCell.m; sourceTree = "<group>"; };
+		E57AD33419E0A4C800D15B51 /* PhotoDemoFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhotoDemoFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57AD33719E0A4C800D15B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57AD33819E0A4C800D15B51 /* PhotoDemoFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoDemoFramework.h; sourceTree = "<group>"; };
+		E57AD33E19E0A4C800D15B51 /* PhotoDemoFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoDemoFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57AD34319E0A4C800D15B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57AD34419E0A4C800D15B51 /* PhotoDemoFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoDemoFrameworkTests.m; sourceTree = "<group>"; };
+		E57AD3CC19E0BA7600D15B51 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../parseSDK/Parse.framework; sourceTree = "<group>"; };
+		E57AD3CD19E0BA7600D15B51 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../../parseSDK/ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		E57AD3CE19E0BA7600D15B51 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		E57AD3D219E0BA7E00D15B51 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E57AD3D419E0BA8600D15B51 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E57AD26A19DF332400D15B51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57AD3E819E0E6DC00D15B51 /* MobileCoreServices.framework in Frameworks */,
+				E57AD3E719E0E6D700D15B51 /* SystemConfiguration.framework in Frameworks */,
+				E57AD3E419E0E6CA00D15B51 /* Parse.framework in Frameworks */,
+				E57AD3E519E0E6CA00D15B51 /* ParseFacebookUtils.framework in Frameworks */,
+				E57AD3E619E0E6CA00D15B51 /* FacebookSDK.framework in Frameworks */,
+				E57AD34819E0A4C800D15B51 /* PhotoDemoFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57AD28319DF332400D15B51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57AD33019E0A4C800D15B51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57AD42519E0E9FA00D15B51 /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57AD33B19E0A4C800D15B51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E57AD26419DF332300D15B51 = {
+			isa = PBXGroup;
+			children = (
+				E57AD3E919E0E76B00D15B51 /* Frameworks */,
+				E57AD33519E0A4C800D15B51 /* PhotoDemoFramework */,
+				E57AD34119E0A4C800D15B51 /* PhotoDemoFrameworkTests */,
+				E57AD26F19DF332400D15B51 /* PhotoDemo */,
+				E57AD28919DF332400D15B51 /* PhotoDemoTests */,
+				E57AD26E19DF332400D15B51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E57AD26E19DF332400D15B51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD26D19DF332400D15B51 /* PhotoDemo.app */,
+				E57AD28619DF332400D15B51 /* PhotoDemoTests.xctest */,
+				E57AD33419E0A4C800D15B51 /* PhotoDemoFramework.framework */,
+				E57AD33E19E0A4C800D15B51 /* PhotoDemoFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E57AD26F19DF332400D15B51 /* PhotoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD27419DF332400D15B51 /* AppDelegate.h */,
+				E57AD27519DF332400D15B51 /* AppDelegate.m */,
+				E57AD27A19DF332400D15B51 /* Main.storyboard */,
+				E57AD27D19DF332400D15B51 /* Images.xcassets */,
+				E57AD27F19DF332400D15B51 /* LaunchScreen.xib */,
+				E57AD29819DF338800D15B51 /* ViewControllers */,
+				E57AD29719DF338800D15B51 /* DataManager */,
+				E57AD27019DF332400D15B51 /* Supporting Files */,
+			);
+			path = PhotoDemo;
+			sourceTree = "<group>";
+		};
+		E57AD27019DF332400D15B51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD2B319E0573A00D15B51 /* Images */,
+				E57AD27119DF332400D15B51 /* Info.plist */,
+				E57AD27219DF332400D15B51 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E57AD28919DF332400D15B51 /* PhotoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD28C19DF332400D15B51 /* PhotoDemoTests.m */,
+				E57AD28A19DF332400D15B51 /* Supporting Files */,
+			);
+			path = PhotoDemoTests;
+			sourceTree = "<group>";
+		};
+		E57AD28A19DF332400D15B51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD28B19DF332400D15B51 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E57AD29719DF338800D15B51 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD2A219E052AE00D15B51 /* DataManager.h */,
+				E57AD2A319E052AE00D15B51 /* DataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		E57AD29819DF338800D15B51 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD2B619E058F700D15B51 /* LoginViewController.h */,
+				E57AD2B719E058F700D15B51 /* LoginViewController.m */,
+				E57AD2CA19E064FB00D15B51 /* PhotoDemoViewController.h */,
+				E57AD2CB19E064FB00D15B51 /* PhotoDemoViewController.m */,
+				E57AD30119E08F1B00D15B51 /* PhotoDetailsViewController.h */,
+				E57AD30219E08F1B00D15B51 /* PhotoDetailsViewController.m */,
+				E57AD30419E08F2200D15B51 /* Cells */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E57AD2AB19E0538800D15B51 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD2B019E0560700D15B51 /* UIAlertView+Error.h */,
+				E57AD2B119E0560700D15B51 /* UIAlertView+Error.m */,
+			);
+			name = Categories;
+			path = ../PhotoDemo/Categories;
+			sourceTree = "<group>";
+		};
+		E57AD2AC19E054C500D15B51 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD2AD19E054D000D15B51 /* Keys.h */,
+			);
+			name = Utilities;
+			path = ../PhotoDemo/Utilities;
+			sourceTree = "<group>";
+		};
+		E57AD2B319E0573A00D15B51 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD2B419E0574000D15B51 /* Buttons.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E57AD2D019E06E7100D15B51 /* FacebookObjects */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD2E119E06E7B00D15B51 /* FacebookPhotoDataResponse.h */,
+				E57AD2E219E06E7B00D15B51 /* FacebookPhotoDataResponse.m */,
+				E57AD2D119E06E7B00D15B51 /* FacebookCategoryList.h */,
+				E57AD2D219E06E7B00D15B51 /* FacebookCategoryList.m */,
+				E57AD2D319E06E7B00D15B51 /* FacebookComments.h */,
+				E57AD2D419E06E7B00D15B51 /* FacebookComments.m */,
+				E57AD2D519E06E7B00D15B51 /* FacebookCursors.h */,
+				E57AD2D619E06E7B00D15B51 /* FacebookCursors.m */,
+				E57AD2D719E06E7B00D15B51 /* FacebookFrom.h */,
+				E57AD2D819E06E7B00D15B51 /* FacebookFrom.m */,
+				E57AD2D919E06E7B00D15B51 /* FacebookLikes.h */,
+				E57AD2DA19E06E7B00D15B51 /* FacebookLikes.m */,
+				E57AD2DB19E06E7B00D15B51 /* FacebookPaging.h */,
+				E57AD2DC19E06E7B00D15B51 /* FacebookPaging.m */,
+				E57AD2DD19E06E7B00D15B51 /* FacebookPhoto.h */,
+				E57AD2DE19E06E7B00D15B51 /* FacebookPhoto.m */,
+				E57AD2DF19E06E7B00D15B51 /* FacebookPhotoData.h */,
+				E57AD2E019E06E7B00D15B51 /* FacebookPhotoData.m */,
+				E57AD2E319E06E7B00D15B51 /* FacebookPlace.h */,
+				E57AD2E419E06E7B00D15B51 /* FacebookPlace.m */,
+				E57AD2E519E06E7B00D15B51 /* FacebookPlaceLocation.h */,
+				E57AD2E619E06E7B00D15B51 /* FacebookPlaceLocation.m */,
+				E57AD2E719E06E7B00D15B51 /* FacebookTags.h */,
+				E57AD2E819E06E7B00D15B51 /* FacebookTags.m */,
+				E57AD2F519E070B500D15B51 /* FacebookMessageTag.h */,
+				E57AD2F619E070B500D15B51 /* FacebookMessageTag.m */,
+			);
+			name = FacebookObjects;
+			path = ../PhotoDemo/DataManager/DataObjects/FacebookObjects;
+			sourceTree = "<group>";
+		};
+		E57AD30419E08F2200D15B51 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD2FB19E0792600D15B51 /* PhotoCollectionViewCell.h */,
+				E57AD2FC19E0792600D15B51 /* PhotoCollectionViewCell.m */,
+				E57AD30819E0934B00D15B51 /* PhotoTableViewCell.h */,
+				E57AD30919E0934B00D15B51 /* PhotoTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E57AD30B19E0A00E00D15B51 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD2F819E0790300D15B51 /* BaseCollectionViewCell.h */,
+				E57AD2F919E0790300D15B51 /* BaseCollectionViewCell.m */,
+				E57AD30519E0933700D15B51 /* BaseTableViewCell.h */,
+				E57AD30619E0933700D15B51 /* BaseTableViewCell.m */,
+			);
+			name = Cells;
+			path = ../PhotoDemo/BaseViewControllers;
+			sourceTree = "<group>";
+		};
+		E57AD33519E0A4C800D15B51 /* PhotoDemoFramework */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD33819E0A4C800D15B51 /* PhotoDemoFramework.h */,
+				E57AD44719E0EBBB00D15B51 /* BaseViewControllers */,
+				E57AD2D019E06E7100D15B51 /* FacebookObjects */,
+				E57AD2AB19E0538800D15B51 /* Categories */,
+				E57AD33619E0A4C800D15B51 /* Supporting Files */,
+			);
+			path = PhotoDemoFramework;
+			sourceTree = "<group>";
+		};
+		E57AD33619E0A4C800D15B51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD2AC19E054C500D15B51 /* Utilities */,
+				E57AD33719E0A4C800D15B51 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E57AD34119E0A4C800D15B51 /* PhotoDemoFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD34419E0A4C800D15B51 /* PhotoDemoFrameworkTests.m */,
+				E57AD34219E0A4C800D15B51 /* Supporting Files */,
+			);
+			path = PhotoDemoFrameworkTests;
+			sourceTree = "<group>";
+		};
+		E57AD34219E0A4C800D15B51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD34319E0A4C800D15B51 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E57AD3E919E0E76B00D15B51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD3D419E0BA8600D15B51 /* MobileCoreServices.framework */,
+				E57AD3D219E0BA7E00D15B51 /* SystemConfiguration.framework */,
+				E57AD3CC19E0BA7600D15B51 /* Parse.framework */,
+				E57AD3CD19E0BA7600D15B51 /* ParseFacebookUtils.framework */,
+				E57AD3CE19E0BA7600D15B51 /* FacebookSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E57AD44719E0EBBB00D15B51 /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD29919DF33D700D15B51 /* BaseViewController.h */,
+				E57AD29A19DF33D700D15B51 /* BaseViewController.m */,
+				E57AD29C19DF33F000D15B51 /* BaseCollectionViewController.h */,
+				E57AD29D19DF33F000D15B51 /* BaseCollectionViewController.m */,
+				E57AD2FE19E08ED600D15B51 /* BaseTableViewController.h */,
+				E57AD2FF19E08ED600D15B51 /* BaseTableViewController.m */,
+				E57AD29F19E051C300D15B51 /* BaseNavigationController.h */,
+				E57AD2A019E051C300D15B51 /* BaseNavigationController.m */,
+				E57AD30B19E0A00E00D15B51 /* Cells */,
+			);
+			name = BaseViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E57AD33119E0A4C800D15B51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57AD44A19E0EC1200D15B51 /* BaseCollectionViewController.h in Headers */,
+				E57AD45219E0EC6A00D15B51 /* BaseTableViewCell.h in Headers */,
+				E57AD33919E0A4C800D15B51 /* PhotoDemoFramework.h in Headers */,
+				E57AD44119E0EA5600D15B51 /* FacebookPlaceLocation.h in Headers */,
+				E57AD44319E0EA5600D15B51 /* FacebookTags.h in Headers */,
+				E57AD40319E0E82600D15B51 /* Keys.h in Headers */,
+				E57AD44C19E0EC1200D15B51 /* BaseTableViewController.h in Headers */,
+				E57AD45019E0EC6A00D15B51 /* BaseCollectionViewCell.h in Headers */,
+				E57AD43519E0EA5600D15B51 /* FacebookFrom.h in Headers */,
+				E57AD44519E0EA5600D15B51 /* FacebookMessageTag.h in Headers */,
+				E57AD42D19E0EA5600D15B51 /* FacebookPhotoDataResponse.h in Headers */,
+				E57AD44819E0EBD900D15B51 /* BaseViewController.h in Headers */,
+				E57AD43919E0EA5600D15B51 /* FacebookPaging.h in Headers */,
+				E57AD43719E0EA5600D15B51 /* FacebookLikes.h in Headers */,
+				E57AD43F19E0EA5600D15B51 /* FacebookPlace.h in Headers */,
+				E57AD43B19E0EA5600D15B51 /* FacebookPhoto.h in Headers */,
+				E57AD43D19E0EA5600D15B51 /* FacebookPhotoData.h in Headers */,
+				E57AD3AD19E0B7EA00D15B51 /* UIAlertView+Error.h in Headers */,
+				E57AD43119E0EA5600D15B51 /* FacebookComments.h in Headers */,
+				E57AD43319E0EA5600D15B51 /* FacebookCursors.h in Headers */,
+				E57AD42F19E0EA5600D15B51 /* FacebookCategoryList.h in Headers */,
+				E57AD44E19E0EC1200D15B51 /* BaseNavigationController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57AD40419E0E8C700D15B51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57AD40519E0E8E500D15B51 /* AppDelegate.h in Headers */,
+				E57AD42B19E0EA3000D15B51 /* DataManager.h in Headers */,
+				E57AD40A19E0E8E500D15B51 /* PhotoTableViewCell.h in Headers */,
+				E57AD42619E0EA2400D15B51 /* LoginViewController.h in Headers */,
+				E57AD40819E0E8E500D15B51 /* PhotoDetailsViewController.h in Headers */,
+				E57AD40719E0E8E500D15B51 /* PhotoDemoViewController.h in Headers */,
+				E57AD40919E0E8E500D15B51 /* PhotoCollectionViewCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E57AD26C19DF332400D15B51 /* PhotoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57AD29019DF332400D15B51 /* Build configuration list for PBXNativeTarget "PhotoDemo" */;
+			buildPhases = (
+				E57AD26919DF332400D15B51 /* Sources */,
+				E57AD26A19DF332400D15B51 /* Frameworks */,
+				E57AD26B19DF332400D15B51 /* Resources */,
+				E57AD34F19E0A4C800D15B51 /* Embed Frameworks */,
+				E57AD40419E0E8C700D15B51 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E57AD34719E0A4C800D15B51 /* PBXTargetDependency */,
+				E57AD34B19E0A4C800D15B51 /* PBXTargetDependency */,
+			);
+			name = PhotoDemo;
+			productName = PhotoDemo;
+			productReference = E57AD26D19DF332400D15B51 /* PhotoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E57AD28519DF332400D15B51 /* PhotoDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57AD29319DF332400D15B51 /* Build configuration list for PBXNativeTarget "PhotoDemoTests" */;
+			buildPhases = (
+				E57AD28219DF332400D15B51 /* Sources */,
+				E57AD28319DF332400D15B51 /* Frameworks */,
+				E57AD28419DF332400D15B51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E57AD28819DF332400D15B51 /* PBXTargetDependency */,
+			);
+			name = PhotoDemoTests;
+			productName = PhotoDemoTests;
+			productReference = E57AD28619DF332400D15B51 /* PhotoDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E57AD33319E0A4C800D15B51 /* PhotoDemoFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57AD34C19E0A4C800D15B51 /* Build configuration list for PBXNativeTarget "PhotoDemoFramework" */;
+			buildPhases = (
+				E57AD32F19E0A4C800D15B51 /* Sources */,
+				E57AD33019E0A4C800D15B51 /* Frameworks */,
+				E57AD33119E0A4C800D15B51 /* Headers */,
+				E57AD33219E0A4C800D15B51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoDemoFramework;
+			productName = PhotoDemoFramework;
+			productReference = E57AD33419E0A4C800D15B51 /* PhotoDemoFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E57AD33D19E0A4C800D15B51 /* PhotoDemoFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57AD35019E0A4C800D15B51 /* Build configuration list for PBXNativeTarget "PhotoDemoFrameworkTests" */;
+			buildPhases = (
+				E57AD33A19E0A4C800D15B51 /* Sources */,
+				E57AD33B19E0A4C800D15B51 /* Frameworks */,
+				E57AD33C19E0A4C800D15B51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E57AD34019E0A4C800D15B51 /* PBXTargetDependency */,
+			);
+			name = PhotoDemoFrameworkTests;
+			productName = PhotoDemoFrameworkTests;
+			productReference = E57AD33E19E0A4C800D15B51 /* PhotoDemoFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E57AD26519DF332300D15B51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Edward Kim";
+				TargetAttributes = {
+					E57AD26C19DF332400D15B51 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					E57AD28519DF332400D15B51 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = E57AD26C19DF332400D15B51;
+					};
+					E57AD33319E0A4C800D15B51 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					E57AD33D19E0A4C800D15B51 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = E57AD26C19DF332400D15B51;
+					};
+				};
+			};
+			buildConfigurationList = E57AD26819DF332300D15B51 /* Build configuration list for PBXProject "PhotoDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E57AD26419DF332300D15B51;
+			productRefGroup = E57AD26E19DF332400D15B51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E57AD26C19DF332400D15B51 /* PhotoDemo */,
+				E57AD28519DF332400D15B51 /* PhotoDemoTests */,
+				E57AD33319E0A4C800D15B51 /* PhotoDemoFramework */,
+				E57AD33D19E0A4C800D15B51 /* PhotoDemoFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E57AD26B19DF332400D15B51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57AD27C19DF332400D15B51 /* Main.storyboard in Resources */,
+				E57AD28119DF332400D15B51 /* LaunchScreen.xib in Resources */,
+				E57AD27E19DF332400D15B51 /* Images.xcassets in Resources */,
+				E57AD45519E0EEDE00D15B51 /* Buttons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57AD28419DF332400D15B51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57AD33219E0A4C800D15B51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57AD33C19E0A4C800D15B51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E57AD26919DF332400D15B51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57AD27619DF332400D15B51 /* AppDelegate.m in Sources */,
+				E57AD42719E0EA2400D15B51 /* LoginViewController.m in Sources */,
+				E57AD2CC19E064FB00D15B51 /* PhotoDemoViewController.m in Sources */,
+				E57AD30319E08F1B00D15B51 /* PhotoDetailsViewController.m in Sources */,
+				E57AD2FD19E0792600D15B51 /* PhotoCollectionViewCell.m in Sources */,
+				E57AD30A19E0934B00D15B51 /* PhotoTableViewCell.m in Sources */,
+				E57AD42C19E0EA3000D15B51 /* DataManager.m in Sources */,
+				E57AD27319DF332400D15B51 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57AD28219DF332400D15B51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57AD28D19DF332400D15B51 /* PhotoDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57AD32F19E0A4C800D15B51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57AD45319E0EC6A00D15B51 /* BaseTableViewCell.m in Sources */,
+				E57AD44619E0EA5600D15B51 /* FacebookMessageTag.m in Sources */,
+				E57AD44919E0EBD900D15B51 /* BaseViewController.m in Sources */,
+				E57AD43019E0EA5600D15B51 /* FacebookCategoryList.m in Sources */,
+				E57AD43619E0EA5600D15B51 /* FacebookFrom.m in Sources */,
+				E57AD43419E0EA5600D15B51 /* FacebookCursors.m in Sources */,
+				E57AD43A19E0EA5600D15B51 /* FacebookPaging.m in Sources */,
+				E57AD43219E0EA5600D15B51 /* FacebookComments.m in Sources */,
+				E57AD45119E0EC6A00D15B51 /* BaseCollectionViewCell.m in Sources */,
+				E57AD3C019E0B80F00D15B51 /* UIAlertView+Error.m in Sources */,
+				E57AD44219E0EA5600D15B51 /* FacebookPlaceLocation.m in Sources */,
+				E57AD44019E0EA5600D15B51 /* FacebookPlace.m in Sources */,
+				E57AD44D19E0EC1200D15B51 /* BaseTableViewController.m in Sources */,
+				E57AD42E19E0EA5600D15B51 /* FacebookPhotoDataResponse.m in Sources */,
+				E57AD43819E0EA5600D15B51 /* FacebookLikes.m in Sources */,
+				E57AD44419E0EA5600D15B51 /* FacebookTags.m in Sources */,
+				E57AD44F19E0EC1200D15B51 /* BaseNavigationController.m in Sources */,
+				E57AD43E19E0EA5600D15B51 /* FacebookPhotoData.m in Sources */,
+				E57AD43C19E0EA5600D15B51 /* FacebookPhoto.m in Sources */,
+				E57AD44B19E0EC1200D15B51 /* BaseCollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57AD33A19E0A4C800D15B51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57AD34519E0A4C800D15B51 /* PhotoDemoFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E57AD28819DF332400D15B51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E57AD26C19DF332400D15B51 /* PhotoDemo */;
+			targetProxy = E57AD28719DF332400D15B51 /* PBXContainerItemProxy */;
+		};
+		E57AD34019E0A4C800D15B51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E57AD26C19DF332400D15B51 /* PhotoDemo */;
+			targetProxy = E57AD33F19E0A4C800D15B51 /* PBXContainerItemProxy */;
+		};
+		E57AD34719E0A4C800D15B51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E57AD33319E0A4C800D15B51 /* PhotoDemoFramework */;
+			targetProxy = E57AD34619E0A4C800D15B51 /* PBXContainerItemProxy */;
+		};
+		E57AD34B19E0A4C800D15B51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E57AD33319E0A4C800D15B51 /* PhotoDemoFramework */;
+			targetProxy = E57AD34A19E0A4C800D15B51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E57AD27A19DF332400D15B51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E57AD27B19DF332400D15B51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E57AD27F19DF332400D15B51 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E57AD28019DF332400D15B51 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E57AD28E19DF332400D15B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E57AD28F19DF332400D15B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E57AD29119DF332400D15B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/edwardkim/Documents/parseSDK,
+					/Users/edwardkim/Documents/FacebookSDK,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = PhotoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E57AD29219DF332400D15B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/edwardkim/Documents/parseSDK,
+					/Users/edwardkim/Documents/FacebookSDK,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = PhotoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E57AD29419DF332400D15B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoDemo.app/PhotoDemo";
+			};
+			name = Debug;
+		};
+		E57AD29519DF332400D15B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoDemo.app/PhotoDemo";
+			};
+			name = Release;
+		};
+		E57AD34D19E0A4C800D15B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/edwardkim/Documents/parseSDK,
+					/Users/edwardkim/Documents/FacebookSDK,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoDemoFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E57AD34E19E0A4C800D15B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/edwardkim/Documents/parseSDK,
+					/Users/edwardkim/Documents/FacebookSDK,
+				);
+				INFOPLIST_FILE = PhotoDemoFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E57AD35119E0A4C800D15B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoDemoFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoDemo.app/PhotoDemo";
+			};
+			name = Debug;
+		};
+		E57AD35219E0A4C800D15B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoDemoFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoDemo.app/PhotoDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E57AD26819DF332300D15B51 /* Build configuration list for PBXProject "PhotoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57AD28E19DF332400D15B51 /* Debug */,
+				E57AD28F19DF332400D15B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E57AD29019DF332400D15B51 /* Build configuration list for PBXNativeTarget "PhotoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57AD29119DF332400D15B51 /* Debug */,
+				E57AD29219DF332400D15B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E57AD29319DF332400D15B51 /* Build configuration list for PBXNativeTarget "PhotoDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57AD29419DF332400D15B51 /* Debug */,
+				E57AD29519DF332400D15B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E57AD34C19E0A4C800D15B51 /* Build configuration list for PBXNativeTarget "PhotoDemoFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57AD34D19E0A4C800D15B51 /* Debug */,
+				E57AD34E19E0A4C800D15B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E57AD35019E0A4C800D15B51 /* Build configuration list for PBXNativeTarget "PhotoDemoFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57AD35119E0A4C800D15B51 /* Debug */,
+				E57AD35219E0A4C800D15B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E57AD26519DF332300D15B51 /* Project object */;
+}
