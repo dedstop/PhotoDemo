@@ -10,6 +10,18 @@
 		E50D18F619E2FE8F00E628ED /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50D18F319E2FE8F00E628ED /* FacebookSDK.framework */; };
 		E50D18F719E2FE8F00E628ED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50D18F419E2FE8F00E628ED /* Parse.framework */; };
 		E50D18F819E2FE8F00E628ED /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50D18F519E2FE8F00E628ED /* ParseFacebookUtils.framework */; };
+		E50D191019E3409900E628ED /* libFlickrKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E50D190B19E33F2000E628ED /* libFlickrKit.a */; };
+		E50D191419E341D800E628ED /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50D191319E341D800E628ED /* AssetsLibrary.framework */; };
+		E50D191B19E3449200E628ED /* FlickrDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E50D191519E3449200E628ED /* FlickrDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E50D191C19E3449200E628ED /* FlickrDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E50D191619E3449200E628ED /* FlickrDataResponse.m */; };
+		E50D191D19E3449200E628ED /* FlickrDataPhotos.h in Headers */ = {isa = PBXBuildFile; fileRef = E50D191719E3449200E628ED /* FlickrDataPhotos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E50D191E19E3449200E628ED /* FlickrDataPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = E50D191819E3449200E628ED /* FlickrDataPhotos.m */; };
+		E50D191F19E3449200E628ED /* FlickrPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = E50D191919E3449200E628ED /* FlickrPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E50D192019E3449200E628ED /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = E50D191A19E3449200E628ED /* FlickrPhoto.m */; };
+		E50D192519E346C500E628ED /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD29A19DF33D700D15B51 /* BaseViewController.m */; };
+		E50D192819E3473D00E628ED /* libFlickrKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E50D190B19E33F2000E628ED /* libFlickrKit.a */; };
+		E50D192919E3474200E628ED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3D219E0BA7E00D15B51 /* SystemConfiguration.framework */; };
+		E50D192A19E3474C00E628ED /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50D191319E341D800E628ED /* AssetsLibrary.framework */; };
 		E57AD27319DF332400D15B51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD27219DF332400D15B51 /* main.m */; };
 		E57AD27619DF332400D15B51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD27519DF332400D15B51 /* AppDelegate.m */; };
 		E57AD27C19DF332400D15B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57AD27A19DF332400D15B51 /* Main.storyboard */; };
@@ -65,7 +77,6 @@
 		E57AD44519E0EA5600D15B51 /* FacebookMessageTag.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2F519E070B500D15B51 /* FacebookMessageTag.h */; };
 		E57AD44619E0EA5600D15B51 /* FacebookMessageTag.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2F619E070B500D15B51 /* FacebookMessageTag.m */; };
 		E57AD44819E0EBD900D15B51 /* BaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD29919DF33D700D15B51 /* BaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E57AD44919E0EBD900D15B51 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD29A19DF33D700D15B51 /* BaseViewController.m */; };
 		E57AD44A19E0EC1200D15B51 /* BaseCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD29C19DF33F000D15B51 /* BaseCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E57AD44B19E0EC1200D15B51 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD29D19DF33F000D15B51 /* BaseCollectionViewController.m */; };
 		E57AD44C19E0EC1200D15B51 /* BaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2FE19E08ED600D15B51 /* BaseTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -80,6 +91,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E50D190A19E33F2000E628ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E50D190519E33F2000E628ED /* FlickrKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 552D918C1753F8EF00BE3FEA;
+			remoteInfo = FlickrKit;
+		};
+		E50D190C19E33F2000E628ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E50D190519E33F2000E628ED /* FlickrKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 552D919A1753F8F000BE3FEA;
+			remoteInfo = FlickrKitTests;
+		};
+		E50D191119E3409E00E628ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E50D190519E33F2000E628ED /* FlickrKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 552D918B1753F8EF00BE3FEA;
+			remoteInfo = FlickrKit;
+		};
+		E50D192619E3473800E628ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E50D190519E33F2000E628ED /* FlickrKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 552D918B1753F8EF00BE3FEA;
+			remoteInfo = FlickrKit;
+		};
 		E57AD28719DF332400D15B51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E57AD26519DF332300D15B51 /* Project object */;
@@ -128,6 +167,14 @@
 		E50D18F319E2FE8F00E628ED /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		E50D18F419E2FE8F00E628ED /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		E50D18F519E2FE8F00E628ED /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		E50D190519E33F2000E628ED /* FlickrKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FlickrKit.xcodeproj; path = "FlickrKit-master/FlickrKit.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		E50D191319E341D800E628ED /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		E50D191519E3449200E628ED /* FlickrDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrDataResponse.h; sourceTree = "<group>"; };
+		E50D191619E3449200E628ED /* FlickrDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrDataResponse.m; sourceTree = "<group>"; };
+		E50D191719E3449200E628ED /* FlickrDataPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrDataPhotos.h; sourceTree = "<group>"; };
+		E50D191819E3449200E628ED /* FlickrDataPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrDataPhotos.m; sourceTree = "<group>"; };
+		E50D191919E3449200E628ED /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
+		E50D191A19E3449200E628ED /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
 		E57AD26D19DF332400D15B51 /* PhotoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57AD27119DF332400D15B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57AD27219DF332400D15B51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -208,6 +255,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E50D191419E341D800E628ED /* AssetsLibrary.framework in Frameworks */,
+				E50D191019E3409900E628ED /* libFlickrKit.a in Frameworks */,
 				E50D18F619E2FE8F00E628ED /* FacebookSDK.framework in Frameworks */,
 				E50D18F719E2FE8F00E628ED /* Parse.framework in Frameworks */,
 				E50D18F819E2FE8F00E628ED /* ParseFacebookUtils.framework in Frameworks */,
@@ -228,6 +277,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E50D192A19E3474C00E628ED /* AssetsLibrary.framework in Frameworks */,
+				E50D192919E3474200E628ED /* SystemConfiguration.framework in Frameworks */,
+				E50D192819E3473D00E628ED /* libFlickrKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +293,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E50D190619E33F2000E628ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E50D190B19E33F2000E628ED /* libFlickrKit.a */,
+				E50D190D19E33F2000E628ED /* FlickrKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E50D192119E3449700E628ED /* FlickerObjects */ = {
+			isa = PBXGroup;
+			children = (
+				E50D191519E3449200E628ED /* FlickrDataResponse.h */,
+				E50D191619E3449200E628ED /* FlickrDataResponse.m */,
+				E50D191719E3449200E628ED /* FlickrDataPhotos.h */,
+				E50D191819E3449200E628ED /* FlickrDataPhotos.m */,
+				E50D191919E3449200E628ED /* FlickrPhoto.h */,
+				E50D191A19E3449200E628ED /* FlickrPhoto.m */,
+			);
+			name = FlickerObjects;
+			sourceTree = "<group>";
+		};
 		E57AD26419DF332300D15B51 = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +356,7 @@
 		E57AD27019DF332400D15B51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E50D190519E33F2000E628ED /* FlickrKit.xcodeproj */,
 				E57AD2B319E0573A00D15B51 /* Images */,
 				E57AD27119DF332400D15B51 /* Info.plist */,
 				E57AD27219DF332400D15B51 /* main.m */,
@@ -417,8 +492,9 @@
 			isa = PBXGroup;
 			children = (
 				E57AD33819E0A4C800D15B51 /* PhotoDemoFramework.h */,
-				E57AD44719E0EBBB00D15B51 /* BaseViewControllers */,
+				E50D192119E3449700E628ED /* FlickerObjects */,
 				E57AD2D019E06E7100D15B51 /* FacebookObjects */,
+				E57AD44719E0EBBB00D15B51 /* BaseViewControllers */,
 				E57AD2AB19E0538800D15B51 /* Categories */,
 				E57AD33619E0A4C800D15B51 /* Supporting Files */,
 			);
@@ -454,6 +530,7 @@
 		E57AD3E919E0E76B00D15B51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E50D191319E341D800E628ED /* AssetsLibrary.framework */,
 				E50D18F319E2FE8F00E628ED /* FacebookSDK.framework */,
 				E50D18F419E2FE8F00E628ED /* Parse.framework */,
 				E50D18F519E2FE8F00E628ED /* ParseFacebookUtils.framework */,
@@ -504,9 +581,12 @@
 				E57AD43B19E0EA5600D15B51 /* FacebookPhoto.h in Headers */,
 				E57AD43D19E0EA5600D15B51 /* FacebookPhotoData.h in Headers */,
 				E57AD3AD19E0B7EA00D15B51 /* UIAlertView+Error.h in Headers */,
+				E50D191D19E3449200E628ED /* FlickrDataPhotos.h in Headers */,
 				E57AD43119E0EA5600D15B51 /* FacebookComments.h in Headers */,
+				E50D191B19E3449200E628ED /* FlickrDataResponse.h in Headers */,
 				E57AD43319E0EA5600D15B51 /* FacebookCursors.h in Headers */,
 				E57AD42F19E0EA5600D15B51 /* FacebookCategoryList.h in Headers */,
+				E50D191F19E3449200E628ED /* FlickrPhoto.h in Headers */,
 				E57AD44E19E0EC1200D15B51 /* BaseNavigationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +621,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E50D191219E3409E00E628ED /* PBXTargetDependency */,
 				E57AD34719E0A4C800D15B51 /* PBXTargetDependency */,
 				E57AD34B19E0A4C800D15B51 /* PBXTargetDependency */,
 			);
@@ -579,6 +660,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E50D192719E3473800E628ED /* PBXTargetDependency */,
 			);
 			name = PhotoDemoFramework;
 			productName = PhotoDemoFramework;
@@ -639,6 +721,12 @@
 			mainGroup = E57AD26419DF332300D15B51;
 			productRefGroup = E57AD26E19DF332400D15B51 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E50D190619E33F2000E628ED /* Products */;
+					ProjectRef = E50D190519E33F2000E628ED /* FlickrKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E57AD26C19DF332400D15B51 /* PhotoDemo */,
@@ -648,6 +736,24 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E50D190B19E33F2000E628ED /* libFlickrKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFlickrKit.a;
+			remoteRef = E50D190A19E33F2000E628ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E50D190D19E33F2000E628ED /* FlickrKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = FlickrKitTests.octest;
+			path = FlickrKitTests.xctest;
+			remoteRef = E50D190C19E33F2000E628ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E57AD26B19DF332400D15B51 /* Resources */ = {
@@ -714,7 +820,6 @@
 			files = (
 				E57AD45319E0EC6A00D15B51 /* BaseTableViewCell.m in Sources */,
 				E57AD44619E0EA5600D15B51 /* FacebookMessageTag.m in Sources */,
-				E57AD44919E0EBD900D15B51 /* BaseViewController.m in Sources */,
 				E57AD43019E0EA5600D15B51 /* FacebookCategoryList.m in Sources */,
 				E57AD43619E0EA5600D15B51 /* FacebookFrom.m in Sources */,
 				E57AD43419E0EA5600D15B51 /* FacebookCursors.m in Sources */,
@@ -727,11 +832,15 @@
 				E57AD44D19E0EC1200D15B51 /* BaseTableViewController.m in Sources */,
 				E57AD42E19E0EA5600D15B51 /* FacebookPhotoDataResponse.m in Sources */,
 				E57AD43819E0EA5600D15B51 /* FacebookLikes.m in Sources */,
+				E50D192019E3449200E628ED /* FlickrPhoto.m in Sources */,
 				E57AD44419E0EA5600D15B51 /* FacebookTags.m in Sources */,
 				E57AD44F19E0EC1200D15B51 /* BaseNavigationController.m in Sources */,
 				E57AD43E19E0EA5600D15B51 /* FacebookPhotoData.m in Sources */,
 				E57AD43C19E0EA5600D15B51 /* FacebookPhoto.m in Sources */,
+				E50D191E19E3449200E628ED /* FlickrDataPhotos.m in Sources */,
 				E57AD44B19E0EC1200D15B51 /* BaseCollectionViewController.m in Sources */,
+				E50D191C19E3449200E628ED /* FlickrDataResponse.m in Sources */,
+				E50D192519E346C500E628ED /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,6 +855,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E50D191219E3409E00E628ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlickrKit;
+			targetProxy = E50D191119E3409E00E628ED /* PBXContainerItemProxy */;
+		};
+		E50D192719E3473800E628ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlickrKit;
+			targetProxy = E50D192619E3473800E628ED /* PBXContainerItemProxy */;
+		};
 		E57AD28819DF332400D15B51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E57AD26C19DF332400D15B51 /* PhotoDemo */;
@@ -877,6 +996,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/FlickrKit-master/Classes\"/**",
 				);
 				INFOPLIST_FILE = PhotoDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -895,6 +1015,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/FlickrKit-master/Classes\"/**",
 				);
 				INFOPLIST_FILE = PhotoDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -949,6 +1070,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/FlickrKit-master/Classes\"/**",
+				);
 				INFOPLIST_FILE = PhotoDemoFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -968,6 +1094,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/FlickrKit-master/Classes\"/**",
+				);
 				INFOPLIST_FILE = PhotoDemoFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

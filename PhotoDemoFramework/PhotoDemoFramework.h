@@ -24,3 +24,6 @@ FOUNDATION_EXPORT const unsigned char PhotoDemoFrameworkVersionString[];
 #import <PhotoDemoFramework/BaseNavigationController.h>
 #import <PhotoDemoFramework/BaseCollectionViewCell.h>
 #import <PhotoDemoFramework/BaseTableViewCell.h>
+#import <PhotoDemoFramework/FlickrDataResponse.h>
+#import <PhotoDemoFramework/FlickrDataPhotos.h>
+#import <PhotoDemoFramework/FlickrPhoto.h>

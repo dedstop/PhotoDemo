@@ -12,6 +12,7 @@
 
 #import <Parse/Parse.h> 
 #import <ParseFacebookUtils/PFFacebookUtils.h>
+#import "FlickrKit.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +26,9 @@
     [Parse setApplicationId:PARSE_APPLICATION_ID
                   clientKey:PARSE_CLIENT_KEY];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    [[FlickrKit sharedFlickrKit] initializeWithAPIKey:FLICKR_APPLICATION_KEY sharedSecret:FLICKR_SECRET_KEY];
+    
     [PFFacebookUtils initializeFacebook];
     
     return YES;

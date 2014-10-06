@@ -17,14 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Facebook is needed for this app demo." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fx1-kD-bvQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Facebook works only if you are a test member" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fx1-kD-bvQ">
                                 <rect key="frame" x="28" y="94" width="544" height="20"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJK-Kb-NJW">
-                                <rect key="frame" x="260" y="128" width="80" height="80"/>
+                                <rect key="frame" x="260" y="127" width="80" height="80"/>
                                 <state key="normal" image="buttonFacebook">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -47,7 +47,13 @@
                             <constraint firstItem="HJK-Kb-NJW" firstAttribute="top" secondItem="Fx1-kD-bvQ" secondAttribute="bottom" constant="14" id="nRN-U5-8Y6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Log in" id="7IM-fh-MxM"/>
+                    <navigationItem key="navigationItem" title="Log in" id="7IM-fh-MxM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wBi-2x-C1a">
+                            <connections>
+                                <action selector="dismiss:" destination="OxK-sP-1Ys" id="wcw-uD-kFq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="LnZ-8F-8RT" id="yP1-KQ-dwN"/>
                         <outlet property="headerLabel" destination="Fx1-kD-bvQ" id="oyO-q2-D1d"/>
@@ -125,7 +131,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PhotoDemo" id="ejW-bF-fUp">
-                        <barButtonItem key="leftBarButtonItem" title="Log out" id="BkJ-MV-tGh">
+                        <barButtonItem key="leftBarButtonItem" title="Facebook" id="BkJ-MV-tGh">
                             <connections>
                                 <action selector="logOut:" destination="BYZ-38-t0r" id="qcJ-NJ-q27"/>
                             </connections>

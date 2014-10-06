@@ -11,4 +11,6 @@
 @interface PhotoCollectionViewCell : BaseCollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 - (void)applyStyle;
+- (PhotoCollectionViewCell*)initFacebookCell:(UICollectionView*)collectionView
+                                  indexPath:(NSIndexPath*)indexPath;
 @end

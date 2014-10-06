@@ -55,6 +55,11 @@
     }];
 }
 
+- (IBAction)loginWithFlickr:(id)sender
+{
+    [self dismiss:sender];
+}
+
 #pragma mark - Content Notification
 - (void)contentSizeCategoryChanged:(NSNotification*)notification
 {

@@ -7,6 +7,7 @@
 //
 
 #import "PhotoCollectionViewCell.h"
+#import "FacebookPhotoData.h"
 
 @implementation PhotoCollectionViewCell
 

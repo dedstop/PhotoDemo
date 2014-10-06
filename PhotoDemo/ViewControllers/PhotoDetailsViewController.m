@@ -9,6 +9,7 @@
 #import "PhotoDetailsViewController.h"
 #import "PhotoTableViewCell.h"
 #import "FacebookLikes.h"
+#import <Parse/Parse.h>
 
 @interface PhotoDetailsViewController ()
 @property (strong, nonatomic) NSArray *identifiers;
@@ -24,18 +25,34 @@
     self.identifiers = @[@"image",@"header",@"detail",@"detail"];
     
     //Check if larger image exists else get new larger image to replace.
-    if (!self.facebookPhotoData.hasLargeImage) {
-        __weak typeof(self) weakSelf = self;
-        __weak typeof(FacebookPhotoData*) weakData = self.facebookPhotoData;
-        
-        [[DataManager sharedInstance] getFacebookPhoto:[NSURL URLWithString:self.facebookPhotoData.source] indexPath:nil onSuccess:^(UIImage *image, NSIndexPath *indexPath) {
-            [weakData setHasLargeImage:YES];
-            [weakData setImage:image];
-            [weakSelf.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
-        } onError:^(NSError *error) {
+    if ([PFUser currentUser]){
+        if (!self.facebookPhotoData.hasLargeImage) {
+            __weak typeof(self) weakSelf = self;
+            __weak typeof(FacebookPhotoData*) weakData = self.facebookPhotoData;
             
-        }];
+            [[DataManager sharedInstance] getPhoto:[NSURL URLWithString:self.facebookPhotoData.source] indexPath:nil onSuccess:^(UIImage *image, NSIndexPath *indexPath) {
+                [weakData setHasLargeImage:YES];
+                [weakData setImage:image];
+                [weakSelf.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+            } onError:^(NSError *error) {
+                
+            }];
+        }
+    }else{
+        if (!self.flickrPhoto.hasLargeImage) {
+            __weak typeof(self) weakSelf = self;
+            __weak typeof(FlickrPhoto*) weakData = self.flickrPhoto;
+            
+            [[DataManager sharedInstance] getPhoto:[[DataManager sharedInstance] imageURL:self.flickrPhoto withSize:FKPhotoSizeMedium800] indexPath:nil onSuccess:^(UIImage *image, NSIndexPath *indexPath) {
+                [weakData setHasLargeImage:YES];
+                [weakData setImage:image];
+                [weakSelf.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+            } onError:^(NSError *error) {
+                
+            }];
+        }
     }
+
     
     
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
@@ -71,7 +88,7 @@
     switch (indexPath.row) {
         case 1:{
             
-            [cell.headerLabel setText:self.facebookPhotoData.name];
+            [cell.headerLabel setText:[PFUser currentUser]?self.facebookPhotoData.name:self.flickrPhoto.title];
             break;
         }
         case 2:{
@@ -106,8 +123,8 @@
             break;
         }
         default:{
-            
-            [cell.photoImageView setImage:self.facebookPhotoData.image];
+            //Loads small image first while call to get larger image is processing
+            [cell.photoImageView setImage:[PFUser currentUser]?self.facebookPhotoData.image:self.flickrPhoto.image];
             break;
         }
     }

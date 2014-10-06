@@ -13,6 +13,7 @@
 #import <Parse/Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 
+
 @implementation DataManager
 
 + (id)sharedInstance
@@ -143,9 +144,37 @@
                           }];
 }
 
-- (void)getFacebookPhoto:(NSURL*)url indexPath:(NSIndexPath*)indexPath
-               onSuccess:(void(^)(UIImage *image, NSIndexPath*indexPath))onSuccess
-                 onError:(void(^)(NSError *error))onError
+#pragma mark - Flickr
+- (void)getFlickrInterestingPhotos:(void(^)(FlickrDataResponse *response))onSuccess
+                     onError:(void(^)(NSError* error))onError
+{
+    FlickrKit *fk = [FlickrKit sharedFlickrKit];
+    FKFlickrInterestingnessGetList *interesting = [[FKFlickrInterestingnessGetList alloc] init];
+    [fk call:interesting completion:^(NSDictionary *response, NSError *error) {
+        // Note this is not the main thread!
+        if (response) {
+            FlickrDataResponse *flickrDataResponse = [FlickrDataResponse instanceFromDictionary:response];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                onSuccess(flickrDataResponse);
+                // Any GUI related operations here
+            });
+        }else{
+            onError(error);
+        }
+    }];
+}
+
+- (NSURL*)imageURL:(FlickrPhoto*)photo withSize:(FKPhotoSize)photoSize
+{
+    FlickrKit *fk = [FlickrKit sharedFlickrKit];
+    return [fk photoURLForSize:photoSize photoID:photo.flickrPhotoId server:photo.server secret:photo.secret farm:[photo.farm stringValue]];
+}
+
+#pragma mark - All
+- (void)getPhoto:(NSURL*)url indexPath:(NSIndexPath*)indexPath
+       onSuccess:(void(^)(UIImage *image, NSIndexPath*indexPath))onSuccess
+         onError:(void(^)(NSError *error))onError
 {
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
@@ -156,4 +185,7 @@
         }
     }];
 }
+
+
+
 @end

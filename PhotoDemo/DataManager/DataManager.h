@@ -10,6 +10,10 @@
 #import <UIKit/UIKit.h>
 
 #import "FacebookPhotoDataResponse.h"
+#import "FlickrDataResponse.h"
+
+#import "FlickrPhoto.h"
+#import "FlickrKit.h"
 
 @interface DataManager : NSObject
 #pragma mark - shared Instance
@@ -23,8 +27,13 @@
 - (void)getFacebookPhotosNext:(NSString*)nextURLString
                     onSuccess:(void(^)(FacebookPhotoDataResponse *response))onSuccess
                       onError:(void(^)(NSError* error))onError;
-- (void)getFacebookPhoto:(NSURL*)url
-               indexPath:(NSIndexPath*)indexPath
-               onSuccess:(void(^)(UIImage *image, NSIndexPath*indexPath))onSuccess
-                 onError:(void(^)(NSError *error))onError;
+#pragma mark - Flickr
+- (void)getFlickrInterestingPhotos:(void(^)(FlickrDataResponse *response))onSuccess
+                           onError:(void(^)(NSError* error))onError;
+
+- (NSURL*)imageURL:(FlickrPhoto*)photo withSize:(FKPhotoSize)photoSize;
+#pragma mark - All
+- (void)getPhoto:(NSURL*)url indexPath:(NSIndexPath*)indexPath
+       onSuccess:(void(^)(UIImage *image, NSIndexPath*indexPath))onSuccess
+         onError:(void(^)(NSError *error))onError;
 @end

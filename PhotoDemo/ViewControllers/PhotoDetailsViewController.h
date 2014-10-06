@@ -8,8 +8,10 @@
 
 #import "BaseTableViewController.h"
 #import "FacebookPhotoData.h"
+#import "FlickrPhoto.h"
 #import "DataManager.h"
 
 @interface PhotoDetailsViewController : BaseTableViewController
 @property (strong, nonatomic) FacebookPhotoData *facebookPhotoData;
+@property (strong, nonatomic) FlickrPhoto *flickrPhoto;
 @end
