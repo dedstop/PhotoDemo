@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E50D18F619E2FE8F00E628ED /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50D18F319E2FE8F00E628ED /* FacebookSDK.framework */; };
+		E50D18F719E2FE8F00E628ED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50D18F419E2FE8F00E628ED /* Parse.framework */; };
+		E50D18F819E2FE8F00E628ED /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50D18F519E2FE8F00E628ED /* ParseFacebookUtils.framework */; };
 		E57AD27319DF332400D15B51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD27219DF332400D15B51 /* main.m */; };
 		E57AD27619DF332400D15B51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD27519DF332400D15B51 /* AppDelegate.m */; };
 		E57AD27C19DF332400D15B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57AD27A19DF332400D15B51 /* Main.storyboard */; };
@@ -23,9 +26,6 @@
 		E57AD34919E0A4C800D15B51 /* PhotoDemoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD33419E0A4C800D15B51 /* PhotoDemoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E57AD3AD19E0B7EA00D15B51 /* UIAlertView+Error.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2B019E0560700D15B51 /* UIAlertView+Error.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E57AD3C019E0B80F00D15B51 /* UIAlertView+Error.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2B119E0560700D15B51 /* UIAlertView+Error.m */; };
-		E57AD3E419E0E6CA00D15B51 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3CC19E0BA7600D15B51 /* Parse.framework */; };
-		E57AD3E519E0E6CA00D15B51 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3CD19E0BA7600D15B51 /* ParseFacebookUtils.framework */; };
-		E57AD3E619E0E6CA00D15B51 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3CE19E0BA7600D15B51 /* FacebookSDK.framework */; };
 		E57AD3E719E0E6D700D15B51 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3D219E0BA7E00D15B51 /* SystemConfiguration.framework */; };
 		E57AD3E819E0E6DC00D15B51 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3D419E0BA8600D15B51 /* MobileCoreServices.framework */; };
 		E57AD40319E0E82600D15B51 /* Keys.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2AD19E054D000D15B51 /* Keys.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,7 +34,6 @@
 		E57AD40819E0E8E500D15B51 /* PhotoDetailsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD30119E08F1B00D15B51 /* PhotoDetailsViewController.h */; };
 		E57AD40919E0E8E500D15B51 /* PhotoCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2FB19E0792600D15B51 /* PhotoCollectionViewCell.h */; };
 		E57AD40A19E0E8E500D15B51 /* PhotoTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD30819E0934B00D15B51 /* PhotoTableViewCell.h */; };
-		E57AD42519E0E9FA00D15B51 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD3CE19E0BA7600D15B51 /* FacebookSDK.framework */; };
 		E57AD42619E0EA2400D15B51 /* LoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2B619E058F700D15B51 /* LoginViewController.h */; };
 		E57AD42719E0EA2400D15B51 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD2B719E058F700D15B51 /* LoginViewController.m */; };
 		E57AD42B19E0EA3000D15B51 /* DataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD2A219E052AE00D15B51 /* DataManager.h */; };
@@ -126,6 +125,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E50D18F319E2FE8F00E628ED /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		E50D18F419E2FE8F00E628ED /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		E50D18F519E2FE8F00E628ED /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		E57AD26D19DF332400D15B51 /* PhotoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57AD27119DF332400D15B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57AD27219DF332400D15B51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -197,9 +199,6 @@
 		E57AD33E19E0A4C800D15B51 /* PhotoDemoFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoDemoFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57AD34319E0A4C800D15B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57AD34419E0A4C800D15B51 /* PhotoDemoFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoDemoFrameworkTests.m; sourceTree = "<group>"; };
-		E57AD3CC19E0BA7600D15B51 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../parseSDK/Parse.framework; sourceTree = "<group>"; };
-		E57AD3CD19E0BA7600D15B51 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../../parseSDK/ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		E57AD3CE19E0BA7600D15B51 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		E57AD3D219E0BA7E00D15B51 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E57AD3D419E0BA8600D15B51 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -209,11 +208,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E50D18F619E2FE8F00E628ED /* FacebookSDK.framework in Frameworks */,
+				E50D18F719E2FE8F00E628ED /* Parse.framework in Frameworks */,
+				E50D18F819E2FE8F00E628ED /* ParseFacebookUtils.framework in Frameworks */,
 				E57AD3E819E0E6DC00D15B51 /* MobileCoreServices.framework in Frameworks */,
 				E57AD3E719E0E6D700D15B51 /* SystemConfiguration.framework in Frameworks */,
-				E57AD3E419E0E6CA00D15B51 /* Parse.framework in Frameworks */,
-				E57AD3E519E0E6CA00D15B51 /* ParseFacebookUtils.framework in Frameworks */,
-				E57AD3E619E0E6CA00D15B51 /* FacebookSDK.framework in Frameworks */,
 				E57AD34819E0A4C800D15B51 /* PhotoDemoFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +228,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57AD42519E0E9FA00D15B51 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,11 +454,11 @@
 		E57AD3E919E0E76B00D15B51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E50D18F319E2FE8F00E628ED /* FacebookSDK.framework */,
+				E50D18F419E2FE8F00E628ED /* Parse.framework */,
+				E50D18F519E2FE8F00E628ED /* ParseFacebookUtils.framework */,
 				E57AD3D419E0BA8600D15B51 /* MobileCoreServices.framework */,
 				E57AD3D219E0BA7E00D15B51 /* SystemConfiguration.framework */,
-				E57AD3CC19E0BA7600D15B51 /* Parse.framework */,
-				E57AD3CD19E0BA7600D15B51 /* ParseFacebookUtils.framework */,
-				E57AD3CE19E0BA7600D15B51 /* FacebookSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -874,8 +872,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/edwardkim/Documents/parseSDK,
-					/Users/edwardkim/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -893,8 +890,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/edwardkim/Documents/parseSDK,
-					/Users/edwardkim/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -948,11 +944,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/edwardkim/Documents/parseSDK,
-					/Users/edwardkim/Documents/FacebookSDK,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -975,11 +967,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/edwardkim/Documents/parseSDK,
-					/Users/edwardkim/Documents/FacebookSDK,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PhotoDemoFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1059,6 +1047,7 @@
 				E57AD34E19E0A4C800D15B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E57AD35019E0A4C800D15B51 /* Build configuration list for PBXNativeTarget "PhotoDemoFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -1067,6 +1056,7 @@
 				E57AD35219E0A4C800D15B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
