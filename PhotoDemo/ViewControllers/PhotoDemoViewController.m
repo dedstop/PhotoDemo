@@ -33,42 +33,54 @@
 @implementation PhotoDemoViewController
 
 #pragma mark - Life Cycle
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
+    [super viewWillAppear:animated];
     
+    
+    if ([PFUser currentUser]) {
+        UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Log out" style:UIBarButtonItemStyleDone target:self action:@selector(logOut:)];
+        [self.navigationItem setLeftBarButtonItem:button];
+        
+        __weak typeof(self) weakSelf = self;
+        if (!self.facebookData) {
+            [self increamentActivty];
+            [self.dataManger getFacebookPhotos:^(FacebookPhotoDataResponse* response) {
+                NSLog(@"Returned response");
+                [weakSelf decrementActivity];
+                NSSortDescriptor *descriptor = [[NSSortDescriptor alloc]
+                                                initWithKey:@"createdTime" ascending:YES selector:@selector(localizedStandardCompare:)];
+                response.data = [response.data sortedArrayUsingDescriptors:@[descriptor]];
+                [weakSelf setFacebookData:response];
+                [weakSelf.collectionView reloadData];
+            } onError:^(NSError *error) {
+                
+                [weakSelf decrementActivity];
+            }];
+        }
+        
+    }else{
+        UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Facebook" style:UIBarButtonItemStyleDone target:self action:@selector(logIn:)];
+        [self.navigationItem setLeftBarButtonItem:button];
+        
+        __weak typeof(self) weakSelf = self;
+        if (!self.flickrData) {
+            [self.dataManger getFlickrInterestingPhotos:^(FlickrDataResponse *response) {
+                [weakSelf decrementActivity];
+                [weakSelf setFlickrData:response];
+                [weakSelf.collectionView reloadData];
+            } onError:^(NSError *error) {
+                [weakSelf decrementActivity];
+            }];
+        }
+    }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.dataManger = [DataManager sharedInstance];
-    __weak typeof(self) weakSelf = self;
-    
-    if ([PFUser currentUser]) {
-        
-        [self increamentActivty];
-        [self.dataManger getFacebookPhotos:^(FacebookPhotoDataResponse* response) {
-            NSLog(@"Returned response");
-            [weakSelf decrementActivity];
-            NSSortDescriptor *descriptor = [[NSSortDescriptor alloc]
-                                            initWithKey:@"createdTime" ascending:YES selector:@selector(localizedStandardCompare:)];
-            response.data = [response.data sortedArrayUsingDescriptors:@[descriptor]];
-            [weakSelf setFacebookData:response];
-            [weakSelf.collectionView reloadData];
-        } onError:^(NSError *error) {
-            
-            [weakSelf decrementActivity];
-        }];
-    }else{
-        [self.dataManger getFlickrInterestingPhotos:^(FlickrDataResponse *response) {
-            [weakSelf decrementActivity];
-            [weakSelf setFlickrData:response];
-            [weakSelf.collectionView reloadData];
-        } onError:^(NSError *error) {
-            [weakSelf decrementActivity];
-        }];
-    }
+
     // Do any additional setup after loading the view.
 }
 
@@ -102,12 +114,26 @@
 }
 
 #pragma mark - Action
+- (IBAction)logIn:(id)sender
+{
+    __weak typeof(self) weakSelf = self;
+    [self increamentActivty];
+    [self.dataManger logInFacebook:sender onSuccess:^{
+        [weakSelf decrementActivity];
+        [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_DID_FINISH_LOG_IN object:nil];
+        [weakSelf dismiss:nil];
+    } onError:^(NSError *error) {
+        [weakSelf decrementActivity];
+    }];
+    //[(BaseNavigationController*)self.navigationController navigateToLogin];
+}
+
 - (IBAction)logOut:(id)sender
 {
     [super logOut:sender];
     [PFUser logOut];
     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_DID_FINISH_LOG_OUT object:nil];
-    [(BaseNavigationController*)self.navigationController navigateToLogin];
+    
 }
 
 
@@ -115,6 +141,12 @@
 - (void)didFinishLogIn
 {
     [super didFinishLogIn];
+    
+    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Log out" style:UIBarButtonItemStyleDone target:self action:@selector(logOut:)];
+    [self.navigationItem setLeftBarButtonItem:button];
+    
+    [self setFlickrData:nil];
+    [self.collectionView reloadData];
     if (!self.facebookData) {
         __weak typeof(self) weakSelf = self;
         [self increamentActivty];
@@ -135,8 +167,23 @@
 - (void)didFinishLogOut
 {
     [super didFinishLogOut];
-    self.facebookData = nil;
+    
+    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Facebook" style:UIBarButtonItemStyleDone target:self action:@selector(logIn:)];
+    [self.navigationItem setLeftBarButtonItem:button];
+    
+    [self setFacebookData:nil];
     [self.collectionView reloadData];
+    
+    __weak typeof(self) weakSelf = self;
+    if (!self.flickrData) {
+        [self.dataManger getFlickrInterestingPhotos:^(FlickrDataResponse *response) {
+            [weakSelf decrementActivity];
+            [weakSelf setFlickrData:response];
+            [weakSelf.collectionView reloadData];
+        } onError:^(NSError *error) {
+            [weakSelf decrementActivity];
+        }];
+    }
 }
 
 //- (void)updateCellWithInfo:(NSDictionary*)info
